@@ -1,0 +1,12 @@
+.box {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  font-size: 2rem;
+  background-color: black;
+  color: white;
+  font-family: "Woodland";
+  font-weight: 100;
+}

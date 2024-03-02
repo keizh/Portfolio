@@ -1,0 +1,42 @@
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+.anime {
+  font-family: "Poppins";
+  font-weight: 900;
+  font-style: bold;
+  background: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+  animation: spin 2.5s linear infinite;
+  background-clip: text;
+  font-size: 20px;
+}
+
+.anime2 {
+  font-family: "Poppins";
+  font-weight: 900;
+  font-style: bold;
+  background: linear-gradient(var(--rotate), #ffff00, #ff0000 43%, #ffa500);
+  animation: spin 2.5s linear infinite;
+  background-clip: text;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .anime {
+    font-size: 13px;
+  }
+  .anime2 {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,11 @@
+.hero1 p {
+  font-size: 8vw;
+}
+
+.hero1.present {
+  color: #fcc419;
+}
+
+.hero1.future {
+  color: #d8f5a2;
+}

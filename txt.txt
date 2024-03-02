@@ -1,0 +1,92 @@
+// import React, { useEffect, useRef } from "react";
+// import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+// gsap.registerPlugin(ScrollTrigger);
+
+// function Info() {
+//   const triggerRef = useRef(null);
+
+//   function useArrayRef() {
+//     const lettersRef = useRef([]);
+//     return [
+//       lettersRef,
+//       (ref) => {
+//         if (ref) lettersRef.current.push(ref);
+//       },
+//     ];
+//   }
+
+//   const [lettersRef, setLettersRef] = useArrayRef();
+
+//   const data = [
+//     "Myself Krishna Mulay",
+//     "I'm a 4th-year student.",
+//     "I study at D Y Patil Pune.",
+//     "My CGPA is 8.8.",
+//     "Seeking an internship.",
+//     "Interested in frontend dev.",
+//     "Prefer 3-6 months.",
+//     "Eager to learn.",
+//     "Ready to work.",
+//   ];
+
+//   useEffect(() => {
+//     const anim = gsap.to(lettersRef.current, {
+//       color: "#2A2A2A",
+//       duration: 5,
+//       stagger: 1,
+//       scrollTrigger: {
+//         trigger: triggerRef.current,
+//         scrub: true,
+//         start: "top center",
+//         end: "bottom 85%",
+//       },
+//     });
+
+//     return () => {
+//       anim.kill();
+//     };
+//   }, [lettersRef]);
+
+//   return (
+//     <div
+//       id="InfoPage"
+//       ref={triggerRef}
+//       className="h-fit py-[15rem] w-screen flex items-center justify-center bg-black"
+//     >
+//       <div className="bg-transparent">
+//         {data.map((line, index) => (
+//           <h1 key={index} className="text-center tracking-[10px] ">
+//             {line.split("").map((char, idx) => (
+//               <span
+//                 key={idx}
+//                 ref={(ref) => setLettersRef(ref)}
+//                 className="text-[7vw] leading-[15vw] sm:text-[5.5vw] sm:leading-[12vw] md:text-[5vw] md:leading-[8.5vw]
+//                 lg:text-[4.5vw] lg:leading-[7vw] xl:text-[3vw] xl:leading-[4.5vw]"
+//                 style={{ color: "#222", fontWeight: "600" }}
+//               >
+//                 {char}
+//               </span>
+//             ))}
+//           </h1>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Info;
+
+//   useEffect(() => {
+//     gsap.to("#InfoPage h1 span", {
+//       color: "#FDBF60",
+//       stagger: 0.1,
+//       scrollTrigger: {
+//         trigger: "#InfoPage h1",
+//         start: "top 50%",
+//         end: "top 10%",
+//         scrub: 1,
+//       },
+//     });
+//   }, []);
