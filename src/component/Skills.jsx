@@ -4,7 +4,6 @@ function Skills() {
       <h1 className="">Skills</h1>
 
       <div id="react">
-        {" "}
         <img src="public\react.js-img.png" alt="" />
       </div>
 

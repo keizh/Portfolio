@@ -498,7 +498,6 @@ body a {
   animation: spin 2.5s linear infinite;
 }
 
-/* 
 #react::before {
   content: "1";
   color: white;
@@ -552,7 +551,7 @@ body a {
   left: -50%;
   transform: translateY(-50%);
   font-size: 1.5vw;
-} */
+}
 
 @media (max-width: 1024px) {
   .SKILLS {
@@ -587,7 +586,7 @@ body a {
   .SKILLS div:nth-child(2n) {
     transform: translateX(50%);
   }
-  /* 
+
   #react::before {
     content: "1";
     color: white;
@@ -641,7 +640,7 @@ body a {
     left: -50%;
     transform: translateY(-50%);
     font-size: 3vw;
-  } */
+  }
 }
 
 @media (max-width: 800px) {
@@ -677,7 +676,7 @@ body a {
   .SKILLS div:nth-child(2n) {
     transform: translateX(50%);
   }
-  /* 
+
   #react::before {
     content: "1";
     color: white;
@@ -731,7 +730,7 @@ body a {
     left: -50%;
     transform: translateY(-50%);
     font-size: 5vw;
-  } */
+  }
 }
 
 @media (max-width: 600px) {
@@ -776,7 +775,7 @@ body a {
     border-radius: 0 10px 0 0;
   }
 
-  /* #react::before {
+  #react::before {
     content: "1";
     color: white;
     position: absolute;
@@ -829,7 +828,7 @@ body a {
     left: -50%;
     transform: translateY(-50%);
     font-size: 5vw;
-  } */
+  }
 }
 
 /* page 1 */

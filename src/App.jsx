@@ -35,23 +35,23 @@ function App() {
   return (
     <div className="APP">
       {/* page 1 */}
-      <div data-scroll id="Home">
+      <div id="Home">
         {" "}
         <Header />
         <Page1 />
       </div>
       {/* page 2 */}
-      <div data-scroll id="About_me">
+      <div id="About_me">
         <Info text={text1} />
       </div>
-      <div data-scroll id="Projects">
+      <div id="Projects">
         <Name title="Projects" />
         <HorizontalSlider />
       </div>
-      <div data-scroll id="Skills">
+      <div id="Skills">
         <Skills />
       </div>
-      <div data-scroll id="Contact_me">
+      <div id="Contact_me">
         <Name title="Contact me" color="black" bg="white" />
         <Info text={text2} top_space={false} below_space={false} />
         <Contactme />
