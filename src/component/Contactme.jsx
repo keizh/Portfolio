@@ -1,4 +1,4 @@
-import linkendinimage from "publiciconmonstr-linkedin-3-32.png";
+import linkendinimage from "../../public/iconmonstr-linkedin-3-32.png";
 
 function Contactme() {
   return (

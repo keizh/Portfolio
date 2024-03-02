@@ -1,8 +1,8 @@
-import reactimage from "public\react.js-img.png";
-import tailwindimage from "public\tailwind-image.jpg";
-import reduximage from "public\redux-logo-landscape.png";
-import framermotionimage from "publicFM.png";
-import allthreeimages from "publicallthree.jpg";
+import reactimage from "../../public/react.js-img.png";
+import tailwindimage from "../../public/react.js-img.png";
+import reduximage from "../../public/react.js-img.png";
+import framermotionimage from "../../public/react.js-img.png";
+import allthreeimages from "../../public/react.js-img.png";
 
 function Skills() {
   return (
