@@ -497,7 +497,7 @@ body a {
   transform: translate(-4.5%, -7%);
   animation: spin 2.5s linear infinite;
 }
-
+/* 
 #react::before {
   content: "1";
   color: white;
@@ -551,7 +551,7 @@ body a {
   left: -50%;
   transform: translateY(-50%);
   font-size: 1.5vw;
-}
+} */
 
 @media (max-width: 1024px) {
   .SKILLS {
@@ -587,7 +587,7 @@ body a {
     transform: translateX(50%);
   }
 
-  #react::before {
+  /* #react::before {
     content: "1";
     color: white;
     position: absolute;
@@ -640,7 +640,7 @@ body a {
     left: -50%;
     transform: translateY(-50%);
     font-size: 3vw;
-  }
+  } */
 }
 
 @media (max-width: 800px) {
@@ -677,7 +677,7 @@ body a {
     transform: translateX(50%);
   }
 
-  #react::before {
+  /* #react::before {
     content: "1";
     color: white;
     position: absolute;
@@ -730,7 +730,7 @@ body a {
     left: -50%;
     transform: translateY(-50%);
     font-size: 5vw;
-  }
+  } */
 }
 
 @media (max-width: 600px) {
@@ -784,7 +784,7 @@ body a {
     transform: translateY(-50%);
     font-size: 5vw;
   }
-
+  /* 
   #tailwind::after {
     content: "2";
     color: white;
@@ -828,7 +828,7 @@ body a {
     left: -50%;
     transform: translateY(-50%);
     font-size: 5vw;
-  }
+  } */
 }
 
 /* page 1 */
