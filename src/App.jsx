@@ -13,17 +13,17 @@ function App() {
   const text1 = `Myself Krishna Mulay, a 4th-year student studying at D Y Patil Pune with a CGPA of 8.8, seeking an internship, interested in frontend development, preferably for 3-6 months, eager to learn, and ready to work.`;
 
   const text2 = `frontend developer, I have crafted web apps using indutry standard tools like Axios, Redux, Tailwind CSS, and utilized TMDB's database. Eager to learn, contribute, and be an asset, not a burden.`;
-  useEffect(() => {
-    const handleResize = () => {
-      window.location.reload(); // Reload the page on window resize
-    };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     window.location.reload(); // Reload the page on window resize
+  //   };
 
-    window.addEventListener("resize", handleResize);
+  //   window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
   const locomotiveScroll = new LocomotiveScroll();
   useEffect(() => {
