@@ -88,7 +88,11 @@ function Nav({ isActive, setIsActive }) {
           initial="initial"
           onClick={() => setIsActive(!isActive)}
         >
-          <a href="#" className="anchor-clicked">
+          <a
+            href="public\Resume.pdf"
+            className="anchor-clicked"
+            download="KrishnaMulayResume.pdf"
+          >
             Resume
           </a>
         </motion.p>
