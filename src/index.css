@@ -1157,8 +1157,10 @@ body a {
   height: 50vh;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 }
 
 .contactmebutton {
@@ -1166,6 +1168,16 @@ body a {
   height: 100px;
   background-color: #c9fd74;
   color: black;
+  border-radius: 100px;
+  cursor: pointer;
+  position: relative;
+}
+
+.resumebutton {
+  width: 300px;
+  height: 100px;
+  background-color: black;
+  color: white;
   border-radius: 100px;
   cursor: pointer;
   position: relative;
@@ -1219,10 +1231,12 @@ body a {
   /* opacity: 0; */
 }
 
-.contactmebutton:hover .perceptiontextbtn p:last-child {
+.contactmebutton:hover .perceptiontextbtn p:last-child,
+.resumebutton:hover .perceptiontextbtn p:last-child {
   opacity: 1;
 }
 
-.contactmebutton:hover .perceptiontextbtn {
+.contactmebutton:hover .perceptiontextbtn,
+.resumebutton:hover .perceptiontextbtn {
   transform: rotateX(90deg);
 }

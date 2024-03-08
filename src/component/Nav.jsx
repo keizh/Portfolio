@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 
+import fileLocation from "../assets/files/Resume.pdf";
 // animate animation is implemented as soon as the component mounts
 const perspective = {
   initial: {
@@ -32,6 +33,7 @@ function Nav({ isActive, setIsActive }) {
     { name: "Projects", id: "#Projects" },
     { name: "Skills", id: "#Skills" },
     { name: "Contact Me", id: "#Contact_me" },
+    { name: "Resume", id: "#Contact_me" },
   ];
 
   useEffect(() => {
@@ -87,15 +89,7 @@ function Nav({ isActive, setIsActive }) {
           exit="exit"
           initial="initial"
           onClick={() => setIsActive(!isActive)}
-        >
-          <a
-            href="public\Resume.pdf"
-            className="anchor-clicked"
-            download="KrishnaMulayResume.pdf"
-          >
-            Resume
-          </a>
-        </motion.p>
+        ></motion.p>
       </div>
     </div>
   );
