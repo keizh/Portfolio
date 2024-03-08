@@ -196,17 +196,21 @@ body a {
 .Image-name-below {
   position: absolute;
   top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0%;
+  transform: translatey(20%);
   font-size: 20px;
+  color: white;
+  font-weight: bold;
 }
 
 .Image-name-above {
   position: absolute;
   top: -10%;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 0%;
+  transform: translateY(-40%);
   font-size: 20px;
+  color: white;
+  font-weight: bold;
 }
 
 /* -----> image glow */
@@ -223,17 +227,17 @@ body a {
     --rotate: 360deg;
   }
 }
-.Image:hover {
+.Special_project1:hover {
   color: rgb(88 199 250 / 100%);
   transition: color 1s;
 }
-.Image:hover:before,
-.Image:hover:after {
+.Special_project1:hover:before,
+.Special_project1:hover:after {
   animation: none;
   opacity: 0;
 }
 
-.Image::after {
+.Special_project1:after {
   content: "";
   width: 105%;
   height: 108%;
@@ -243,6 +247,35 @@ body a {
     #5ddcff,
     #3c67e3 43%,
     #4e00c2
+  );
+  position: absolute;
+  z-index: -1;
+  top: 0%;
+  left: 0;
+  transform: translate(-2.5%, -3.5%);
+  animation: spin 2.5s linear infinite;
+}
+
+.Special_project2:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+.Special_project2:hover:before,
+.Special_project2:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+.Special_project2:after {
+  content: "";
+  width: 105%;
+  height: 108%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate),
+    #faa300,
+    #fff78a 43%,
+    #f7418f
   );
   position: absolute;
   z-index: -1;
@@ -295,6 +328,7 @@ body a {
     position: relative;
     border-radius: 10px;
     margin-right: 100px;
+    display: block;
   }
 
   .Image-name-below {
