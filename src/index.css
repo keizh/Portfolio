@@ -1240,3 +1240,7 @@ body a {
 .resumebutton:hover .perceptiontextbtn {
   transform: rotateX(90deg);
 }
+
+.no-scroll {
+  overflow: hidden;
+}

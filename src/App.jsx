@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Info from "./component/Basic_info";
 import HorizontalSlider from "./component/HorizontalSlider";
 import Page1 from "./component/Page1";
@@ -8,9 +8,11 @@ import LocomotiveScroll from "locomotive-scroll";
 import Name from "./component/ProjectName";
 import Skills from "./component/Skills";
 import Contactme from "./component/Contactme";
+import LoadingAsset from "./component/LoadingAsset";
 
 function App() {
   const text1 = `Myself Krishna Mulay, a 4th-year student studying at D Y Patil Pune with a CGPA of 8.8, seeking an internship, interested in frontend development, preferably for 3-6 months, eager to learn, and ready to work.`;
+  const [loader, setLoader] = useState(true);
 
   const text2 = `frontend developer, I have crafted web apps using indutry standard tools like Axios, Redux, Tailwind CSS, and utilized TMDB's database. Eager to learn, contribute, and be an asset, not a burden.`;
   // useEffect(() => {
@@ -34,9 +36,9 @@ function App() {
 
   return (
     <div className="APP">
+      {loader && <LoadingAsset setLoader={setLoader} />}
       {/* page 1 */}
       <div id="Home">
-        {" "}
         <Header />
         <Page1 />
       </div>
