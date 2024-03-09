@@ -66,9 +66,9 @@ export default function HeroBig() {
       <div className="hero">
         <div className="text-wrapper">
           <p>FRONTEND DEV</p>
-          <p style={{ color: "red" }}>Hire Me</p>
+          <p style={{ color: "red" }}>Open to work</p>
           <p>Future :FULL STACK</p>
-          <p style={{ color: "orangered" }}>Interview Me</p>
+          <p style={{ color: "orangered" }}>Interview</p>
         </div>
       </div>
     </>
