@@ -15,7 +15,7 @@ function Slider({ data }) {
           <video
             style={{ height: "100%", width: "100%" }}
             src={`${data[0].url}`}
-            poster={`${data[0].url}`}
+            poster={`${data[0].iurl}`}
             muted
             loop
             autoPlay
@@ -33,7 +33,7 @@ function Slider({ data }) {
           <video
             style={{ height: "100%", width: "100%" }}
             src={`${data[1].url}`}
-            poster={`${data[1].url}`}
+            poster={`${data[1].iurl}`}
             muted
             loop
             autoPlay
@@ -49,7 +49,7 @@ function Slider({ data }) {
           <video
             style={{ height: "100%", width: "100%" }}
             src={`${data[2].url}`}
-            poster={`${data[2].url}`}
+            poster={`${data[2].iurl}`}
             muted
             loop
             autoPlay
@@ -67,7 +67,7 @@ function Slider({ data }) {
           <video
             style={{ height: "100%", width: "100%" }}
             src={`${data[3].url}`}
-            poster={`${data[3].url}`}
+            poster={`${data[3].iurl}`}
             muted
             loop
             autoPlay

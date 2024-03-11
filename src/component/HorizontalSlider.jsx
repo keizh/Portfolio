@@ -16,10 +16,24 @@ import CSSP2 from "../assets/videos/CSSP2.mp4";
 import CSSP3 from "../assets/videos/CSSP3.mp4";
 import CSSP4 from "../assets/videos/CSSP4.mp4";
 
+import majorpng from "../assets/images/WYM.png";
+import minorpng from "../assets/images/item.png";
+import Refokuspng from "../assets/images/refokus.png";
+import Obyspng from "../assets/images/obys.png";
+import JS1png from "../assets/images/estate.png";
+import JS2png from "../assets/images/book.png";
+import JS3png from "../assets/images/paint.png";
+import CSSP5png from "../assets/images/css5.png";
+import CSSP1png from "../assets/images/css1.png";
+import CSSP2png from "../assets/images/css2.png";
+import CSSP3png from "../assets/images/css3.png";
+import CSSP4png from "../assets/images/css4.png";
+
 const slider1 = [
   {
     href: `https://watch-your-movie.netlify.app/`,
     url: `${major}`,
+    iurl: `${majorpng}`,
     name: "WYM",
     special1: true,
     special2: false,
@@ -27,6 +41,7 @@ const slider1 = [
   {
     href: `https://item-react-manager.netlify.app/`,
     url: `${minor}`,
+    iurl: `${minorpng}`,
     name: "Item Manager",
     special1: false,
     special2: true,
@@ -34,6 +49,7 @@ const slider1 = [
   {
     href: `https://refokus-framer.netlify.app/`,
     url: `${Refokus}`,
+    iurl: `${Refokuspng}`,
     name: "Refokus",
     special1: true,
     special2: false,
@@ -41,6 +57,7 @@ const slider1 = [
   {
     href: `https://odyssey-gsap-website.netlify.app/`,
     url: `${Obys}`,
+    iurl: `${Obyspng}`,
     name: "Odys Project",
     special1: false,
     special2: true,
@@ -51,6 +68,7 @@ const slider2 = [
   {
     href: `https://kitabo-ka-ghar.netlify.app/`,
     url: `${JS1}`,
+    iurl: `${JS1png}`,
     name: "Book Website",
     special1: false,
     special2: false,
@@ -58,6 +76,7 @@ const slider2 = [
   {
     href: `https://expensive-real-estate.netlify.app/`,
     url: `${JS2}`,
+    iurl: `${JS2png}`,
     name: "Real Estate Website",
     special1: false,
     special2: false,
@@ -65,6 +84,7 @@ const slider2 = [
   {
     href: `https://paintoverme.netlify.app/`,
     url: `${JS3}`,
+    iurl: `${JS3png}`,
     name: "Paint",
     special1: false,
     special2: false,
@@ -72,6 +92,7 @@ const slider2 = [
   {
     href: `https://dribble-inspired-4.netlify.app/`,
     url: `${CSSP5}`,
+    iurl: `${CSSP5png}`,
     name: "Dribble Website",
     special1: false,
     special2: false,
@@ -81,6 +102,7 @@ const slider3 = [
   {
     href: `https://modelling-agency-premier.netlify.app/`,
     url: `${CSSP4}`,
+    iurl: `${CSSP4png}`,
     name: "Dribble Inspired",
     special1: false,
     special2: false,
@@ -88,6 +110,7 @@ const slider3 = [
   {
     href: `https://dribble-inspired-3.netlify.app/`,
     url: `${CSSP3}`,
+    iurl: `${CSSP3png}`,
     name: "Dribble Inspired",
     special1: false,
     special2: false,
@@ -95,6 +118,7 @@ const slider3 = [
   {
     href: `https://dribble-inspired-2.netlify.app/`,
     url: `${CSSP2}`,
+    iurl: `${CSSP2png}`,
     name: "Dribble Inspired",
     special1: false,
     special2: false,
@@ -102,6 +126,7 @@ const slider3 = [
   {
     href: `https://dribble-inspired-1.netlify.app/`,
     url: `${CSSP1}`,
+    iurl: `${CSSP1png}`,
     name: "Dribble Inspired",
     special1: false,
     special2: false,
@@ -202,7 +227,7 @@ function ScrollSection() {
         <div ref={sectionRef} className="scroll-section-inner">
           <Slider data={slider1} />
           <Slider data={slider2} />
-          `` <Slider data={slider3} />
+          <Slider data={slider3} />
         </div>
       </div>
     </section>
