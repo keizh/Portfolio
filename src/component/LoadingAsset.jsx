@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const LoadingAssets = ({ setLoader }) => {
@@ -50,6 +50,7 @@ const LoadingAssets = ({ setLoader }) => {
       }} // Properly configured exit animation
     >
       <motion.div
+        className="loading"
         style={{
           borderRadius: "50%",
           color: "white",
@@ -99,7 +100,8 @@ const LoadingAssets = ({ setLoader }) => {
           fontWeight: "bold",
         }}
       >
-        Resume download is{" "}
+        <span style={{ color: "orange" }}>RESUME </span>
+        download is{" "}
         <span
           style={{
             color: "red",
