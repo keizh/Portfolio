@@ -71,11 +71,11 @@ const LoadingAssets = ({ setLoader }) => {
         style={{
           color: "red",
           fontWeight: "bold",
-          fontSize: "30px",
+          fontSize: "20px",
           marginBlock: "20px",
         }}
       >
-        Netlify Issues :
+        Web Hosting Platform Issues :
       </p>
       <p
         style={{
