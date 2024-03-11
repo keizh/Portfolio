@@ -34,6 +34,7 @@ const LoadingAssets = ({ setLoader }) => {
         width: "100vw",
         height: "100vh",
         display: "flex",
+        flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
         zIndex: 9999,
@@ -51,9 +52,9 @@ const LoadingAssets = ({ setLoader }) => {
       <motion.div
         style={{
           borderRadius: "50%",
-          background: "blue",
           color: "white",
           display: "flex",
+
           alignItems: "center",
           justifyContent: "center",
           fontSize: "40px",
@@ -65,6 +66,49 @@ const LoadingAssets = ({ setLoader }) => {
       >
         Loading Asset {progress}%
       </motion.div>
+      <p
+        style={{
+          color: "red",
+          fontWeight: "bold",
+          fontSize: "30px",
+          marginBlock: "20px",
+        }}
+      >
+        Netlify Issues :
+      </p>
+      <p
+        style={{
+          color: "white",
+          fontWeight: "bold",
+        }}
+      >
+        Video Asset{" "}
+        <span
+          style={{
+            color: "red",
+            fontWeight: "bold",
+          }}
+        >
+          SLOW
+        </span>{" "}
+        loading.
+      </p>
+      <p
+        style={{
+          color: "white",
+          fontWeight: "bold",
+        }}
+      >
+        Resume download is{" "}
+        <span
+          style={{
+            color: "red",
+            fontWeight: "bold",
+          }}
+        >
+          SLOW
+        </span>
+      </p>
     </motion.div>
   );
 };
